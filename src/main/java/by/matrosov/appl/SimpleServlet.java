@@ -7,6 +7,10 @@ import javax.servlet.http.*;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+//navigate to
+//localhost:8080/java_servlet_war_exploded/servlet
+//to see the "hello servlet"
+//also example implements SessionListener and count active sessions
 @WebServlet(
         urlPatterns = "/servlet",
         initParams = {

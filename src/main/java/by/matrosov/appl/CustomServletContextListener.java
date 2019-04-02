@@ -4,6 +4,7 @@ import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 import javax.servlet.annotation.WebListener;
 
+//example of listener
 @WebListener
 public class CustomServletContextListener implements ServletContextListener {
     @Override

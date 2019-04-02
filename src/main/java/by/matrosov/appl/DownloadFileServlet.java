@@ -9,13 +9,15 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
+//navigate to
+//localhost:8080/java_servlet_war_exploded/download
+//to download text
 @WebServlet("/download")
 public class DownloadFileServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         resp.setContentType("text/plain");
         resp.setHeader("Content-Disposition","attachment;filename=downloadname.txt");
-
 
         try(InputStream in = req.getServletContext().getResourceAsStream("/test.txt");
             OutputStream out = resp.getOutputStream()) {
