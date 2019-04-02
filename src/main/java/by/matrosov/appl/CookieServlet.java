@@ -11,7 +11,7 @@ import java.io.PrintWriter;
 
 //navigate to
 //localhost:8080/java_servlet_war_exploded/cookie
-//create a simple Cookie, time to live is one hour, and store in client computer.
+//to create a simple Cookie, time to live is one hour, and store in client computer.
 @WebServlet("/cookie")
 public class CookieServlet extends HttpServlet {
     @Override
